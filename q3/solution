@@ -1,0 +1,47 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n,i,m,min,max;
+    cin>>n;
+    int A[n];
+    
+    for(i=0;i<n;i++){
+        cin>>A[i];
+        } 
+    for(i=0;i<n;i++){
+         cout<<A[i]<<" ";
+        } 
+        
+            
+        
+    min=A[0];
+    for(i=0;i<n;i++){
+        if(A[i]<min){
+            
+            min=A[i];
+        }
+        
+    }
+        
+    cout<<"smallest elemnt is"<<min;
+    max=A[0];
+    for(i=0;i<n;i++){
+        if(A[i]>max){
+            
+            max=A[i];
+        }
+        
+    }
+    
+       cout<<"largest elemnt is"<<max;
+        
+   
+      
+    return 0;
+}
