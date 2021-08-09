@@ -1,0 +1,37 @@
+#include <sstream>
+
+#include <string.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int X;
+    double Y;
+    
+    cin >>X;
+    cin >>Y;
+    
+    
+    
+    
+    if(X%5==0 && Y>=X+.50){
+        
+        cout << X<<" ";
+        
+        
+         cout <<fixed<< setprecision(2) <<Y<<endl;
+        
+        double B;
+        B=(Y-X)-(.50);
+       cout <<fixed<< setprecision(2) <<B<<endl;
+    }
+    else{
+        cout << X<<" ";
+        
+         cout <<fixed<< setprecision(2) <<Y<<endl;
+         cout <<fixed<< setprecision(2) <<Y<<endl;
+        
+    }
+	
+	return 0;
+}
