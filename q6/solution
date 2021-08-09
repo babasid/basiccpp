@@ -1,0 +1,23 @@
+#include<iostream>
+#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int T,i,X;
+    int AR[T];
+    1 <= T <=1000;
+    int A,B;
+    0 <=A<=10000;0 <=B<=10000;
+    cin>>T;
+    for(i=0;i<T;i++){
+        cin>>A>>B;
+        X=A+B;
+    
+        AR[i]=X;
+    
+    }
+    for(i=0;i<T;i++){
+        std::cout << AR[i] << std::endl;
+    }
+    
+}
