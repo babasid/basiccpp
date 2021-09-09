@@ -29,6 +29,42 @@ int numberofdigits(int n){
 }
 
 
+/* optimized code*/
+time compelxity : O(1) SPACE COMPLEXITY O(1)
+
+
+#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+int numberofdigits(int n){
+    int count=1;
+
+    if(n==0){
+        return 1;
+    }
+    else{ 
+        int result=log10(n)+ 1;
+        return result;
+    }
+    
+    
+     
+    
+}
+
+
+
+int main()
+{
+    cout<<"Hello World"<<endl;
+    cout<<numberofdigits(1784544);
+    
+
+    return 0;
+}
+
+
 
 int main()
 {
