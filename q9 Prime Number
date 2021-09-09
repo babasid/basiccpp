@@ -1,0 +1,37 @@
+/******************************************************************************
+
+                 time comlexity is O(sqrt(n))
+
+*******************************************************************************/
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int isptime(int n){
+    for(int i=sqrt(n);i<n;i++){
+        if(n%i==0){
+            return 1;
+        }
+        
+    }
+    return 2;
+    }
+
+
+
+int main()
+{
+   
+    if(isptime(19)==2){
+        cout<<"prime";
+    }
+    else
+    {
+        cout<<"not prime";
+    }
+    
+    
+
+    return 0;
+}
