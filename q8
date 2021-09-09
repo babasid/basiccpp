@@ -1,0 +1,40 @@
+/* To find the number of intgers in an given numbers ex:
+1207-->4
+15428-->5
+the logic if if number is not divisble by 10 then just return 1 otherwise maintain the count and increamne tthe number of count after dividing the number by 10*/
+approch1:
+Time complexity is O(n)
+#include <iostream>
+
+
+using namespace std;
+int numberofdigits(int n){
+    int count=1;
+
+    if(n==0){
+        return 1;
+    }
+    else{ 
+        while(n>=10){
+        n=n/10;
+        count +=1;
+        
+        }
+        return count;
+    }
+    
+    
+     
+    
+}
+
+
+
+int main()
+{
+    cout<<"Hello World"<<endl;
+    cout<<numberofdigits(1784544);
+    
+
+    return 0;
+}
