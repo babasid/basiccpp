@@ -3,7 +3,7 @@
 15428-->5
 the logic if if number is not divisble by 10 then just return 1 otherwise maintain the count and increamne tthe number of count after dividing the number by 10*/
 approch1:
-Time complexity is O(n)
+Time complexity is O(count)
 #include <iostream>
 
 
