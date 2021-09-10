@@ -1,0 +1,39 @@
+/******************************************************************************
+
+time complexity is O[N]
+Space complexity is O[N]
+
+*******************************************************************************/
+
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+void cylindericalroptation(int arr[],int n){
+    int temp[n];
+    int i;
+    for(i=0;i<n;i++){
+        temp[i]=arr[i];
+    }
+    
+    for(i=0;i<n;i++){
+        
+        arr[i+1]=temp[i];
+        
+        
+    }
+    arr[0]=temp[n-1];
+    for(i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+int main()
+
+
+{int n;
+    int arr[n]={1,2,3,4,5};
+    cylindericalroptation(arr,5);
+
+    return 0;
+}
