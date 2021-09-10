@@ -1,0 +1,37 @@
+/******************************************************************************
+tie compklexity O(n)
+Space comlexity O(n)
+
+*******************************************************************************/
+
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+void rotate(int arr[],int n,int d){
+    int temp[d];
+    int i;
+    for(i=0;i<d;i++){
+        temp[i]=arr[i];
+        
+    }
+    for(i=0;i<n-d;i++){
+        arr[i]=arr[d+i];
+    }
+    for(i=0;i<d;i++){
+        arr[n-d+i]=temp[i];
+    }
+    for(i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+int main()
+{
+    int n=5;
+    int arr[5]={1,2,3,4,5};
+    rotate(arr,n,2);
+
+    return 0;
+}
